@@ -1,0 +1,3 @@
+class UserCostumesController < ApplicationController
+
+end
