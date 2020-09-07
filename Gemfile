@@ -15,7 +15,9 @@ gem 'puma', '~> 3.12', '>= 3.12.6'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'httparty', '~> 0.13.7'
+gem 'pexels', '~> 0.0.4'
+# gem 'json', '~> 2.1'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
