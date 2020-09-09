@@ -5,11 +5,18 @@ class UsersController < ApplicationController
   end
 
   def new
-    user = User.new(name)
+    user = User.new
   end
 
  def create
-  user = User.create(name: name)   
+  user = User.create(userParams)   
+  render json: user
+  end
+
+
+  private
+  def userParams
+    params.require(:user).permit(:name)
   end
 
 end

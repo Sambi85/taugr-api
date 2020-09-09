@@ -5,7 +5,19 @@ class UserCostumesController < ApplicationController
       end
 
       def show
-        user_costume = UserCostume.find(params[:id])
+        user_costume = UserCostume.find(userCostumeParams)
         render json: user_costume
       end
+
+       def create
+        user_costume = UserCostume.create(userCostumeParams)  
+        render json: user_costume
+      end
+
+      private
+
+      def userCostumeParams
+      params.require(:user_costume).permit(:user_id, :costume_id)
+      end
+
 end
