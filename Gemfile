@@ -19,6 +19,8 @@ gem 'httparty', '~> 0.13.7'
 gem 'pexels', '~> 0.0.4'
 gem 'dotenv'
 gem 'dotenv-rails'
+# gem 'fast_jsonapi'
+gem 'active_model_serializers'
 # gem 'json', '~> 2.1'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

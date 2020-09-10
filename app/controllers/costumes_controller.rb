@@ -8,4 +8,5 @@ class CostumesController < ApplicationController
         costume = Costume.find(params[:id])
         render json: costume
       end
+      
 end

@@ -5,7 +5,7 @@ class UserCostumesController < ApplicationController
       end
 
       def show
-        user_costume = UserCostume.find(userCostumeParams)
+        user_costume = UserCostume.find(params[:id])
         render json: user_costume
       end
 
